@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <circle cx="50" cy="50" r="48" fill="#0B2545" stroke="#FF671F" stroke-width="3"/>
+  <circle cx="50" cy="50" r="40" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <!-- Central Emblem / Flame & Star -->
+  <path d="M50 16 C53 28, 64 34, 64 45 C64 54, 57 60, 50 60 C43 60, 36 54, 36 45 C36 34, 47 28, 50 16 Z" fill="#FF671F"/>
+  <path d="M50 25 C52 32, 59 36, 59 43 C59 49, 54 53, 50 53 C46 53, 41 49, 41 43 C41 36, 48 32, 50 25 Z" fill="#FBBF24"/>
+  <!-- Base Torch Handle / Stand -->
+  <path d="M43 62 L57 62 L54 80 L46 80 Z" fill="#046A38"/>
+  <line x1="40" y1="80" x2="60" y2="80" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <!-- Ring Stars -->
+  <circle cx="28" cy="40" r="2.5" fill="#FFFFFF"/>
+  <circle cx="72" cy="40" r="2.5" fill="#FFFFFF"/>
+  <circle cx="24" cy="54" r="2" fill="#FF671F"/>
+  <circle cx="76" cy="54" r="2" fill="#046A38"/>
+</svg>

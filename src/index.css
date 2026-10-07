@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F8FAFC;
+    color: #1E293B;
+  }
+}
+
+/* Custom Scrollbar for professional government portal feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Top tricolor subtle accent strip */
+.tricolor-strip {
+  height: 4px;
+  background: linear-gradient(90deg, #FF671F 0%, #FF671F 33.3%, #FFFFFF 33.3%, #FFFFFF 66.6%, #046A38 66.6%, #046A38 100%);
+}
+
+.tricolor-strip-subtle {
+  height: 3px;
+  background: linear-gradient(90deg, #FF671F 0%, #FF9933 33.3%, #E2E8F0 33.3%, #E2E8F0 66.6%, #138808 66.6%, #046A38 100%);
+}
+
+/* Printable acknowledgment styling */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-acknowledgement,
+  #printable-acknowledgement * {
+    visibility: visible;
+  }
+  #printable-acknowledgement {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: #ffffff !important;
+    box-shadow: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
