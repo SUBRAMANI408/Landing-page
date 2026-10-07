@@ -63,6 +63,7 @@ export const Footer = () => {
               <li><Link to="/venues" className="hover:text-white transition-colors">Venues & Facilities</Link></li>
               <li><Link to="/rules" className="hover:text-white transition-colors">Rules & Regulations</Link></li>
               <li><Link to="/faq" className="hover:text-white transition-colors">FAQ & Support</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact Secretariat</Link></li>
             </ul>
           </div>
 
@@ -94,9 +95,9 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-white transition-colors">
-                  Secretariat Helpdesk
-                </a>
+                <Link to="/contact" className="hover:text-white transition-colors">
+                  Secretariat Helpdesk (+91 95858 99506)
+                </Link>
               </li>
             </ul>
           </div>

@@ -23,6 +23,7 @@ export const Header = () => {
     { name: t.prizes, path: '/prizes' },
     { name: 'Rules', path: '/rules' },
     { name: t.faq, path: '/faq' },
+    { name: t.contact, path: '/contact' },
   ];
 
   const isActive = (path) => {

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Target, Eye, Users, Award, ShieldCheck, HeartHandshake, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Target, Eye, Users, Award, ShieldCheck, HeartHandshake, CheckCircle, User, Phone, Mail, Building } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 export const AboutSection = () => {
@@ -155,6 +156,111 @@ export const AboutSection = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* EXECUTIVE LEADERSHIP & SECRETARIAT DIRECTORATE */}
+        <div className="mt-16 bg-white border-2 border-portal-navy/15 rounded-2xl p-8 sm:p-10 shadow-portal-card">
+          <div className="max-w-3xl mb-8">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-100 text-portal-saffron-dark text-xs font-extrabold uppercase tracking-wider border border-orange-200 mb-2">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              <span>Championship Directorate &amp; Governance</span>
+            </div>
+            <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-portal-navy">
+              Executive Organizing Secretariat
+            </h3>
+            <p className="text-slate-600 text-sm sm:text-base mt-2">
+              The National Annual Talent &amp; Sports Championship operates under a dedicated governing secretariat responsible for tournament fairness, venue compliance, and nationwide athlete coordination.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+            {/* Chief Convener Primary Card */}
+            <div className="lg:col-span-2 bg-gradient-to-br from-portal-navy to-portal-navy-dark text-white rounded-xl p-6 sm:p-8 flex flex-col justify-between shadow-md relative overflow-hidden">
+              <div className="relative z-10">
+                <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                  <span className="px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-portal-saffron text-white shadow-xs">
+                    Chief Organizing Convener &amp; Executive Director
+                  </span>
+                  <span className="text-xs text-slate-300 font-mono">
+                    ID: NATSC-DIR-2026
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0">
+                    <User className="w-8 h-8 text-portal-saffron" />
+                  </div>
+                  <div>
+                    <h4 className="text-2xl sm:text-3xl font-heading font-extrabold text-white">
+                      Venkata Subramani S
+                    </h4>
+                    <p className="text-sm font-semibold text-portal-saffron-light">
+                      Director of Central Operations &amp; National Convener
+                    </p>
+                  </div>
+                </div>
+
+                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                  Spearheading the overall tournament infrastructure, federation compliance, participant certification, and nationwide institutional affiliations for the 2026 championship edition.
+                </p>
+              </div>
+
+              <div className="relative z-10 pt-4 border-t border-white/15 flex flex-wrap items-center justify-between gap-4">
+                <div className="flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-portal-saffron" />
+                  <span className="text-xs text-slate-300">Direct Helpline:</span>
+                  <a href="tel:9585899506" className="text-sm font-mono font-bold text-white hover:text-portal-saffron transition-colors">
+                    +91 95858 99506
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="w-4 h-4 text-portal-saffron" />
+                  <a href="mailto:helpdesk@natsc2026.org" className="text-xs text-slate-200 hover:text-white transition-colors">
+                    helpdesk@natsc2026.org
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Secretariat Office Details Card */}
+            <div className="bg-portal-gray-light rounded-xl p-6 border border-slate-200 flex flex-col justify-between">
+              <div>
+                <h4 className="text-base font-bold text-portal-navy mb-2 flex items-center gap-2">
+                  <Building className="w-4 h-4 text-portal-navy" />
+                  Secretariat Headquarters
+                </h4>
+                <p className="text-xs text-slate-600 leading-relaxed mb-4">
+                  Administrative Wing 3, Sector 4, Central Championship Enclave, New Delhi - 110001.
+                </p>
+
+                <div className="space-y-2 text-xs">
+                  <div className="p-2.5 rounded-lg bg-white border border-slate-200">
+                    <span className="font-bold text-slate-700 block">Chief Convener:</span>
+                    <span className="text-portal-navy font-semibold">Venkata Subramani S</span>
+                  </div>
+                  <div className="p-2.5 rounded-lg bg-white border border-slate-200">
+                    <span className="font-bold text-slate-700 block">Direct Line:</span>
+                    <a href="tel:9585899506" className="font-mono text-portal-navy font-bold hover:underline">
+                      +91 95858 99506
+                    </a>
+                  </div>
+                  <div className="p-2.5 rounded-lg bg-white border border-slate-200">
+                    <span className="font-bold text-slate-700 block">Working Hours:</span>
+                    <span className="text-slate-600">Mon - Sat: 9:00 AM - 6:00 PM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-4 mt-4 border-t border-slate-200">
+                <Link
+                  to="/contact"
+                  className="w-full inline-flex items-center justify-center py-2.5 px-4 rounded-lg bg-portal-navy hover:bg-portal-navy-light text-white text-xs font-bold uppercase tracking-wider transition-colors"
+                >
+                  Contact Secretariat Desk
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 

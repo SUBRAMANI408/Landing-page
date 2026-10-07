@@ -13,6 +13,7 @@ import { VenuesPage } from './pages/VenuesPage';
 import { PrizesPage } from './pages/PrizesPage';
 import { RulesPage } from './pages/RulesPage';
 import { FaqPage } from './pages/FaqPage';
+import { ContactPage } from './pages/ContactPage';
 import { RegisterPage } from './pages/RegisterPage';
 import { RegistrationSuccessPage } from './pages/RegistrationSuccessPage';
 import { MyRegistrationPage } from './pages/MyRegistrationPage';
@@ -53,6 +54,7 @@ export function App() {
           <Route path="/prizes" element={<PrizesPage />} />
           <Route path="/rules" element={<RulesPage />} />
           <Route path="/faq" element={<FaqPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/registration-success" element={<RegistrationSuccessPage />} />
           <Route path="/my-registrations" element={<MyRegistrationPage />} />

@@ -10,9 +10,15 @@ export const AboutPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <div className="bg-portal-navy text-white rounded-2xl p-8 sm:p-12 shadow-portal-card relative overflow-hidden">
           <div className="relative z-10 max-w-2xl">
-            <span className="text-xs uppercase font-extrabold tracking-widest text-portal-saffron block mb-2">
-              NATIONAL INTEGRATION THROUGH SPORT &amp; TALENT
-            </span>
+            <div className="flex flex-wrap items-center gap-2 mb-3">
+              <span className="text-xs uppercase font-extrabold tracking-widest text-portal-saffron">
+                NATIONAL INTEGRATION THROUGH SPORT &amp; TALENT
+              </span>
+              <span className="hidden sm:inline text-slate-400">•</span>
+              <span className="text-xs text-slate-300 bg-white/10 px-2.5 py-0.5 rounded-full border border-white/15">
+                Convener: <strong className="text-white">Venkata Subramani S</strong> (Tel: <a href="tel:9585899506" className="text-portal-saffron hover:underline">9585899506</a>)
+              </span>
+            </div>
             <h1 className="text-3xl sm:text-4xl font-heading font-extrabold text-white mb-4">
               About the National Annual Championship 2026
             </h1>
