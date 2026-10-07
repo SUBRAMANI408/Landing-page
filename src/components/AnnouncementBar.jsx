@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Volume2, ArrowRight, X } from 'lucide-react';
+import { Volume2, ArrowRight, X, Phone, User } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { announcementsData } from '../data/announcements';
 
@@ -30,6 +30,20 @@ export const AnnouncementBar = ({ onOpenAnnouncement }) => {
             {t.viewDetails} <ArrowRight className="w-3 h-3" />
           </button>
         </div>
+
+        {/* Convener Helpline in Announcement Bar */}
+        <div className="hidden lg:flex items-center gap-2 shrink-0 border-l border-white/20 pl-3 text-[11px] text-slate-300">
+          <span>Convener: <strong className="text-white">Venkata Subramani S</strong></span>
+          <a
+            href="tel:9585899506"
+            className="inline-flex items-center gap-1 font-mono font-bold text-portal-saffron hover:underline"
+            title="Convener Helpline"
+          >
+            <Phone className="w-3 h-3" />
+            +91 95858 99506
+          </a>
+        </div>
+
         <div className="flex items-center gap-2 shrink-0">
           <button
             type="button"

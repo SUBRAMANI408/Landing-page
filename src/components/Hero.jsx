@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, Trophy, ArrowRight, ShieldCheck, Users, CheckCircle2 } from 'lucide-react';
+import { Sparkles, Trophy, ArrowRight, ShieldCheck, Users, CheckCircle2, User, Phone } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 export const Hero = () => {
@@ -17,10 +17,25 @@ export const Hero = () => {
           
           {/* LEFT COLUMN: Authority Headlines & Actions */}
           <div className="lg:col-span-7 space-y-5 text-center lg:text-left">
-            {/* National Official Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-portal-saffron/30 text-portal-saffron-dark text-xs font-extrabold uppercase tracking-widest shadow-2xs">
-              <span className="w-2 h-2 rounded-full bg-portal-saffron animate-pulse"></span>
-              <span>{t.regOpenBadge}</span>
+            {/* Top Identity & Convener Directorate Strip - First Viewable */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-portal-navy text-white text-xs font-semibold shadow-xs border border-portal-navy/30">
+                <User className="w-3.5 h-3.5 text-portal-saffron" />
+                <span className="text-[11px] text-portal-saffron uppercase tracking-wider font-extrabold">Chief Convener:</span>
+                <span className="font-bold text-white">Venkata Subramani S</span>
+              </div>
+              <a
+                href="tel:9585899506"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-orange-50 text-portal-navy hover:text-portal-saffron-dark text-xs font-bold font-mono border border-slate-300 shadow-2xs transition-colors"
+                title="Direct Helpline to Convener Venkata Subramani S"
+              >
+                <Phone className="w-3.5 h-3.5 text-portal-saffron" />
+                <span>+91 95858 99506</span>
+              </a>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-orange-50 border border-portal-saffron/30 text-portal-saffron-dark text-xs font-extrabold uppercase tracking-widest shadow-2xs">
+                <span className="w-2 h-2 rounded-full bg-portal-saffron animate-pulse"></span>
+                <span>{t.regOpenBadge}</span>
+              </div>
             </div>
 
             {/* Main Heading */}
@@ -116,6 +131,27 @@ export const Hero = () => {
                 <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-green-50 text-portal-green border border-green-200">
                   Verified Portal
                 </span>
+              </div>
+
+              {/* Convener Directorial Accreditation */}
+              <div className="bg-portal-gray-light border border-slate-200 rounded-xl p-2.5 mb-2 flex items-center justify-between text-xs">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-lg bg-portal-navy text-portal-saffron flex items-center justify-center font-bold text-xs shrink-0">
+                    VS
+                  </div>
+                  <div>
+                    <span className="text-[9.5px] text-slate-500 uppercase tracking-wider block font-bold leading-none">Chief Convener</span>
+                    <span className="font-bold text-portal-navy text-xs leading-tight">Venkata Subramani S</span>
+                  </div>
+                </div>
+                <a
+                  href="tel:9585899506"
+                  className="text-xs font-mono font-bold text-portal-saffron-dark hover:underline flex items-center gap-1 bg-white px-2 py-1 rounded-md border border-slate-200 shadow-2xs"
+                  title="Direct Convener Helpline"
+                >
+                  <Phone className="w-3 h-3 text-portal-saffron" />
+                  +91 95858 99506
+                </a>
               </div>
 
               {/* Central Vector Artwork: Sports, Trophy, Achievement */}
